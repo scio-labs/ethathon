@@ -5,11 +5,13 @@
 ![Next.js](https://img.shields.io/badge/Next.js-gray)
 ![Tailwind](https://img.shields.io/badge/Tailwind-pink)
 
-<img src="packages/frontend/public/images/cover.jpg" width="500" height="280" alt="Cover Image" />
+<img src="packages/frontend/public/images/mix-cover.jpg" width="800" height="223" alt="Cover Image" />
 
 ---
 
-This is an opinionated boilerplate/starterkit/scaffold to get up and running with smart contract & dApp development. Also comes in handy for hackathons. 👀
+This is an opinionated boilerplate/starterkit/scaffold to get up and running with smart contract & dApp development in the EVM-ecosystem.
+
+It also comes in handy for hackathons. 👀
 
 By [Dennis Zoma](https://twitter.com/dennis_zoma) 🧙‍♂️ & [Scio Labs](https://scio.xyz) 💫.
 
