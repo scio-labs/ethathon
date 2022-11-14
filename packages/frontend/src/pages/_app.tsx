@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         dangerouslySetAllPagesToNoIndex={!env.isProduction}
         defaultTitle="ETHathon" // TODO
         titleTemplate="%s | ETHathon" // TODO
-        description="Smart Contract & DApp Development Boilerplate" // TODO
+        description="EVM-based Smart Contract & DApp Development Boilerplate" // TODO
         openGraph={{
           type: 'website',
           locale: 'en',
