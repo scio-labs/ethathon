@@ -48,18 +48,27 @@ const HomePage: NextPage = () => {
     <>
       <CenterBody>
         {/* Title */}
-        <div tw="flex flex-col items-center text-center">
+        <div tw="flex flex-col items-center text-center font-mono">
           <Link
             href="https://github.com/scio-labs/ethathon"
             target="_blank"
-            tw="mb-2 cursor-pointer opacity-50 hover:opacity-100"
+            className="group"
+            tw="flex cursor-pointer flex-col items-center"
           >
-            <Image src={githubIcon} priority width={42} height={42} alt="Github Logo" />
+            <Image
+              src={githubIcon}
+              priority
+              width={42}
+              alt="Github Logo"
+              tw="opacity-50 group-hover:opacity-100"
+            />
+            <h1 tw="mt-4 font-black text-3xl tracking-tight underline-offset-4 group-hover:underline">
+              ETHathon
+            </h1>
           </Link>
-          <h1 tw="font-bold text-3xl tracking-tight">ETHathon</h1>
           <p tw="mt-1 text-gray-400">EVM-based Smart Contract & DApp Development Boilerplate</p>
-          <a tw="mt-4" href="https://github.com/scio-labs/ethathon#deployment">
-            <Image src={vercelIcon} priority width={92} height={32} alt="Deploy with Vercel" />
+          <a tw="mt-6" href="https://github.com/scio-labs/ethathon#deployment">
+            <Image src={vercelIcon} priority width={92} alt="Deploy with Vercel" />
           </a>
           <div tw="my-14 w-14 bg-gray-800 h-[2px]" />
         </div>
