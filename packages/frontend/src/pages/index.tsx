@@ -1,3 +1,4 @@
+import { HomeTopBar } from '@components/home/HomeTopBar'
 import { CenterBody } from '@components/layout/CenterBody'
 import { Lock__factory } from '@ethathon/contracts/typechain-types'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
@@ -46,6 +47,12 @@ const HomePage: NextPage = () => {
 
   return (
     <>
+      {/* Top Bar */}
+      <HomeTopBar href="https://inkathon.xyz">
+        <div tw="font-bold">INK!athon</div>
+        <div tw="hidden sm:inline"> – Substrate-based DApp Boilerplate</div>
+      </HomeTopBar>
+
       <CenterBody>
         {/* Title */}
         <div tw="flex flex-col items-center text-center font-mono">
