@@ -1,5 +1,9 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 
+/**
+ * Environment Variables defined in `.env.local`.
+ * See `env.local.example` for documentation.
+ */
 export const env = {
   url:
     process.env.NEXT_PUBLIC_VERCEL_URL && process.env.NEXT_PUBLIC_VERCEL_ENV! === 'preview'
