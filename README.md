@@ -119,19 +119,20 @@ Additionally, there are the following un-highlighted occurences:
 
 ## Deployment
 
-Setting up a deployment via Vercel is pretty straightforward, only a few things have to be configured differently (as it's a monorepo structure):
+Setting up a deployment via Vercel is pretty straightforward as build settings are preconfigured in `vercel.json`. To get started, press the **Deploy** button and enter the default environment variables listed below.
 
-1. Press the **Deploy** button below:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fethathon%2Fethathon&env=NEXT_PUBLIC_PRODUCTION_MODE,NEXT_PUBLIC_URL,NEXT_PUBLIC_DEFAULT_CHAIN,NEXT_PUBLIC_SUPPORTED_CHAINS,NEXT_PUBLIC_RPC_1,NEXT_PUBLIC_RPC_5&envDescription=See%20Environment%20Variables%20Examples%20%26%20Documentation&envLink=https%3A%2F%2Fgithub.com%2Fethathon%2Fethathon%2Fblob%2Fmain%2Fpackages%2Ffrontend%2F.env.local.example&redirect-url=https%3A%2F%2Fgithub.com%2Fethathon%2Fethathon)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fethathon%2Fethathon&env=NEXT_PUBLIC_PRODUCTION_MODE,NEXT_PUBLIC_URL,NEXT_PUBLIC_DEFAULT_CHAIN,NEXT_PUBLIC_SUPPORTED_CHAINS,NEXT_PUBLIC_RPC_1&envDescription=See%20Environment%20Variables%20Examples%20%26%20Documentation&envLink=https%3A%2F%2Fgithub.com%2Fethathon%2Fethathon%2Fblob%2Fmain%2Fpackages%2Ffrontend%2F.env.local.example&redirect-url=https%3A%2F%2Fgithub.com%2Fethathon%2Fethathon)
+| Environment Variable          | Value                             |
+| ----------------------------- | --------------------------------- |
+| `NEXT_PUBLIC_PRODUCTION_MODE` | `true`                            |
+| `NEXT_PUBLIC_URL`             | `https://your-repo.vercel.app`    |
+| `NEXT_PUBLIC_DEFAULT_CHAIN`   | `5`                               |
+| `NEXT_PUBLIC_DEFAULT_CHAIN`   | `[5]`                             |
+| `NEXT_PUBLIC_RPC_1`           | `https://rpc.ankr.com/eth`        |
+| `NEXT_PUBLIC_RPC_5`           | `https://rpc.ankr.com/eth_goerli` |
 
-2. Configure the environment variables (see [`packages/frontend/.env.local.example`](https://github.com/scio-labs/ethathon/blob/main/packages/frontend/.env.local.example) for documentation) and wait for the first build to finish.
-3. Wait for the first build (which will fail) and overwrite the project settings as follows:
-
-   - Set custom "Output Directory": `./packages/frontend/.next`
-   - Optionally set custom "Install Command": `pnpm install --no-frozen-lockfile` to enforce a less strict behavior when lock-files are not in sync.
-
-4. Redeploy (Press the three dots next to the latest deployment in Vercel)
+You can find mode documentation on those environment variables in [`packages/frontend/.env.local.example`](https://github.com/scio-labs/ethathon/blob/main/packages/frontend/.env.local.example). Always make sure to include respective RPCs for supported chains and define them within [`packages/frontend/src/shared/environment.ts`](https://github.com/scio-labs/ethathon/blob/main/packages/frontend/src/shared/environment.ts). Valid hardhat deployments under [`packages/contracts/deployments`](https://github.com/scio-labs/ethathon/blob/main/packages/contracts/deployments) are mandatory for each supported chain.
 
 ## FAQs & Troubleshooting
 
