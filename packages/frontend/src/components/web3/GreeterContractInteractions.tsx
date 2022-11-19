@@ -1,4 +1,4 @@
-import { Lock__factory } from '@ethathon/contracts/typechain-types'
+import { Lock__factory } from '@ethathon/contracts/typechain-types' // TODO
 import { useDeployments } from '@shared/useDeployments'
 import { FC } from 'react'
 import toast from 'react-hot-toast'

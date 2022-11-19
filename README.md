@@ -25,6 +25,7 @@ By [Dennis Zoma](https://twitter.com/dennis_zoma) 🧙‍♂️ & [Scio Labs](ht
 4. [Development](#development)
    1. [Quickstart](#quickstart)
    2. [VSCode Setup](#vscode-setup)
+   3. [Customization](#customization)
 5. [Deployment](#deployment)
 6. [FAQs & Troubleshooting](#faqs--troubleshooting)
 
@@ -100,6 +101,16 @@ I strongly recommend installing all the plugins listed below. They should be sug
 #### Snippets
 
 The file [`packages/frontend/.vscode/frontend.code-snippets`](https://github.com/scio-labs/ethathon/blob/main/packages/frontend/.vscode/frontend.code-snippets) contains useful snippets for quickly creating components & pages with Next.js, React, Typescript, and twin.macro. Example: Enter "Function Component with Props" in an empty `.tsx` file to get a `FC` component boilerplate with an empty TypeScript interface declaration and already imported 'twin.macro'. Check out the snippet-file itself to get a full overview.
+
+### Customization
+
+There are multiple places where you need to insert your actual project name/identifier. I've highlighted most of these occurences with a `/* TODO */` comment in the code. When installing the `todo-tree` plugin [listed above](#vscode-setup) you can easily replace them one by one.
+
+Additionally, there are the following un-highlighted occurences:
+
+- The name of the `.vscode/*.code-workspace` file
+- The package names within `package.json`, `packages/frontend/package.json`, and `packages/contracts/package.json`
+- The workspace dependency defined in `packages/frontend/package.json`
 
 ## Deployment
 
