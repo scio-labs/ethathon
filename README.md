@@ -169,3 +169,16 @@ Important, in production it's recommended to use at most one of 1. and 2. to red
 The packages above can be easily switched out with plain TailwindCSS, a detailed guide on that is coming very soon. In the meantime, open an issue to get guidance.
 
 </details>
+
+<details>
+<summary><strong>Resources to learn more about EVM, Solidity, Hardhat, and wagmi.sh</strong></summary>
+
+- [Ethereum Developer Resources](https://ethereum.org/en/developers/)
+- [Solidity Language Documentation](https://docs.soliditylang.org/en/v0.8.17/)
+- [Solidity by Example](https://solidity-by-example.org/)
+- [Hardhat Documentation](https://hardhat.org/docs)
+- [OpenZeppelin Documentation](https://docs.openzeppelin.com/)
+- [wagmi.sh Documentation](https://wagmi.sh/)
+- [RainbowKit Documentation](https://www.rainbowkit.com/docs)
+
+</details>
